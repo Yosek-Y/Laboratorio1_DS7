@@ -1,0 +1,63 @@
+/* Reset de la pantalla */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body centrado total */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    /* Fondo con degradado */
+    background: linear-gradient(135deg, #7e297f, #74db8c);
+}
+
+/* Estilos de textos */
+h1 {
+    color: rgb(255, 255, 255);
+    margin: 10px 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #ffffff;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+/* BOTONES */
+button {
+    width: 150px;
+    padding: 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 12px;
+    background: rgb(255, 255, 255);
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Animación al pasar el mouse */
+button:hover {
+    background: #ff00ea;
+    color: rgb(255, 255, 255);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+}

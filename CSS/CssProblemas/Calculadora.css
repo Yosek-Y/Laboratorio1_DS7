@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+
+    /* Tu degradado */
+    background: linear-gradient(to bottom, #293c7f, #be82f9);
+}
+
+/* Tarjeta */
+.contenedor {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Título */
+h1 {
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0); 
+}
+
+/* Inputs y select */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #293c7f;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #be82f9;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover */
+button:hover {
+    background: #293c7f;
+}
+
+/* Resultado */
+.resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f3e8ff; /* tono suave morado */
+    border-radius: 10px;
+}
+
+.resultado h2 {
+    color: #293c7f;
+}
+
+.resultado p {
+    font-size: 20px;
+    color: #293c7f;
+    font-weight: bold;
+}

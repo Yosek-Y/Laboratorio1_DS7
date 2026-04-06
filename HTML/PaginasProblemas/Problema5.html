@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de entrada del dato</title>
+    <link rel="stylesheet" href="../../CSS/CssProblemas/Problemas.css">
+</head>
+
+<body>
+ <h1>Sanitización, Normalización y Trimming de Datos</h1>
+    <!--Formulario para ingresar el nombre y la edad-->
+    <form method="post" action="../../PHP/Problema5.php">
+
+        <label for="nombre">Ingrese su Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ej. José Pérez" required>
+        <br><br>
+        <label for="edad">Ingrese su Edad:</label>
+        <input type="number" name="edad" id="edad" min="0" step="1" placeholder="Ej. 25" required>
+        <br>
+        <button type="submit" value="confirmar">Confirmar</button>
+        <button onclick="window.location.href='../Home.html'">Volver al inicio</button>
+    </form>
+
+</body>
+
+</html>

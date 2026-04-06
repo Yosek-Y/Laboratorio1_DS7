@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+
+    /* Degradado vertical */
+    background: linear-gradient(to bottom, #293c7f, #be82f9);
+}
+
+/* Contenedor tipo tarjeta */
+.contenedor {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    text-align: center;
+}
+
+/* Título */
+.contenedor h1 {
+    color: #293c7f;
+    margin-bottom: 20px;
+}
+
+/* Resultados */
+.contenedor h2 {
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Botón volver */
+.btn-volver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    background: #be82f9;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Hover */
+.btn-volver:hover {
+    background: #293c7f;
+}
