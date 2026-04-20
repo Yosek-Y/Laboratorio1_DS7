@@ -13,6 +13,17 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $Nombre = $_POST["nombre"];
     $Edad = $_POST["edad"];
+    //Eliminar espacios al inicio y final
+    $Nombre = trim($Nombre);
+
+    //Eliminar caracteres especiales y números al inicio y final
+    $Nombre = preg_replace('/^[^a-zA-ZáéíóúÁÉÍÓÚñÑ]+|[^a-zA-ZáéíóúÁÉÍÓÚñÑ]+$/u', '', $Nombre);
+
+    //Quitar números y caracteres especiales dentro (opcional pero recomendado)
+    $Nombre = preg_replace('/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/u', '', $Nombre);
+
+    //Normalizar: primera letra mayúscula, resto minúsculas
+    $Nombre = mb_convert_case($Nombre, MB_CASE_TITLE, "UTF-8");
 ?>
 
 <div class="contenedor">
